@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[if (is_array(${1:\$ar}) && count($1))
+{
+	$2
+}
+
+]]></content>
+    <tabTrigger>ifa</tabTrigger>
+    <scope>source.php</scope>
+    <description>foreach …</description>
+</snippet>

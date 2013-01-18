@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[public function test$3() 
+{
+	$4
+}
+
+]]></content>
+    <tabTrigger>testfunc</tabTrigger>
+    <scope>source.php</scope>
+    <description>unit test function …</description>
+</snippet>
