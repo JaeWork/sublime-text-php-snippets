@@ -3,9 +3,8 @@
 {
 	$4
 }
-
 ]]></content>
-    <tabTrigger>testfunc</tabTrigger>
+    <tabTrigger>testf</tabTrigger>
     <scope>source.php</scope>
     <description>unit test function …</description>
 </snippet>

@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[//-- ${1:names} (array)
+protected \$$1 = array();
+
+public function num${1/(?:^|_)(\w)/\U$1$2/g$1}()
+{
+	return count(\$this->$1);
+}
+
+public function get${1/(?:^|_)(\w)/\U$1$2/g$1}()
+{	
+	return \$this->$1;
+}
+
+public function set${1/(?:^|_)(\w)/\U$1$2/g$1}(\$$1)
+{
+	\$this->$1 = \$$1;
+}
+
+public function add${1/(?:^|_)(\w)/\U$1$2/g$1}(\$$1, \$key=null)
+{
+	\$this->$1[\$key] = \$$1;
+}
+//-- $1 end 
+]]></content>
+    <tabTrigger>gsa</tabTrigger>
+    <scope>source.php</scope>
+    <description>Getter setter for Array …</description>
+</snippet>

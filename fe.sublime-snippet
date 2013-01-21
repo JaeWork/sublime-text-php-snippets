@@ -3,7 +3,6 @@
 {
 	$3
 }
-
 ]]></content>
     <tabTrigger>fe</tabTrigger>
     <scope>source.php</scope>
