@@ -17,8 +17,28 @@ we see that perl regex and substitution is in effect. And that expressions can b
 
 TODO
 ----
+- Add suitable docblocks to all functions, classes, file templates
+- Process Plurals
+
+
+Process Plurals
+---------------
 Take a closer look at the gsa array command and get the plural converted to singular for
 
-|| Name || Plural || Singular ||
-| $items | getItems | addItem |
-| $entries | getEntries | addEntry |
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Plural</th>
+        <th>Singular</th>
+    </tr>
+    <tr>
+        <td>$items</td>
+        <td>getItems</td>
+        <td>addItem</td>
+    </tr>
+    <tr>
+        <td>$entries</td>
+        <td>getEntries</td>
+        <td>addEntry</td>
+    </tr>
+</table>
