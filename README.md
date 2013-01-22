@@ -10,7 +10,7 @@ A list of keywords, descriptions and usage will appear here very (very) soon, al
 
 I found this repository with an inspiring implementation of text processing on the fly. https://github.com/akrabat/sublime-akrabat which brought me onto this snippets documentation http://docs.sublimetext.info/en/latest/extensibility/snippets.html, We see that perl regex and substitution is in effect. And that expressions can be nested! This means it should be possible to perform plural expressions as a nested 'or' statement.
 
-- [Boost regex](http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax)html
+- [Boost regex](http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)
 - [Boost format](http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html)
 
 ### TODO
