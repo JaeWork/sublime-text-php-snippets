@@ -1,10 +1,10 @@
 <snippet>
-    <content><![CDATA[public function test$3() 
+    <content><![CDATA[public function test${1:Name}() 
 {
-	$4
+	$2
 }
 ]]></content>
-    <tabTrigger>testf</tabTrigger>
+    <tabTrigger>tfun</tabTrigger>
     <scope>source.php</scope>
     <description>unit test function …</description>
 </snippet>
