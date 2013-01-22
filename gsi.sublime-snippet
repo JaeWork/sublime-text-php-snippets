@@ -1,17 +1,29 @@
 <snippet>
-    <content><![CDATA[//-- ${1:name} (int)
+    <content><![CDATA[/**
+ * @var int ${1:name}
+ */
 protected \$$1;
-    	
+
+/**
+ * Get ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ * 
+ * @return int ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ */
 public function get${1/(?:^|_)(\w)/\U$1$2/g$1}()
 {
 	return \$this->$1;
 }
 
+/**
+ * Set ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ *
+ * @param int \$value value of ${1/(?:^|_)(\w)/\U$1$2/g$1} to set
+ * @return void
+ */
 public function set${1/(?:^|_)(\w)/\U$1$2/g$1}(\$value)
 {
 	\$this->$1 = (int) \$value;
 }
-// $1 end
 ]]></content>
     <tabTrigger>gsi</tabTrigger>
     <scope>source.php</scope>

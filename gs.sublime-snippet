@@ -1,7 +1,5 @@
 <snippet>
-    <content><![CDATA[//-- ${1:name} 
-
-protected \$${1/(?:^|_)(\w)/\U$1$2/g$1};
+    <content><![CDATA[protected \$$1;
     	
 public function get${1/(?:^|_)(\w)/\U$1$2/g$1}()
 {
@@ -12,7 +10,6 @@ public function set${1/(?:^|_)(\w)/\U$1$2/g$1}(\$value)
 {
 	\$this->$1 = \$value;
 }
-// -- $1 end
 ]]></content>
     <tabTrigger>gs</tabTrigger>
     <scope>source.php</scope>
