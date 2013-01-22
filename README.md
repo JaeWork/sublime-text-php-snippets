@@ -7,22 +7,17 @@ The idea behind this repository is that we end up with a set of useful php snipp
 
 A list of keywords, descriptions and usage will appear here very (very) soon, along with the code to keep them up to date. If you have any snippets you think should be included then please submit them via pull request.
 
-Found this repository with an inspiring implementation of text processing on the fly. https://github.com/akrabat/sublime-akrabat
 
-looking deeper in the snippets documentation http://docs.sublimetext.info/en/latest/extensibility/snippets.html 
-we see that perl regex and substitution is in effect. And that expressions can be nested! This means it should be possible to perform plural expressions as a nested or statement.
+I found this repository with an inspiring implementation of text processing on the fly. https://github.com/akrabat/sublime-akrabat which brought me onto this snippets documentation http://docs.sublimetext.info/en/latest/extensibility/snippets.html, We see that perl regex and substitution is in effect. And that expressions can be nested! This means it should be possible to perform plural expressions as a nested 'or' statement.
 
-[Boost regex] http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html
-[Boost format] http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html
+- [Boost regex](http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)
+- [Boost format](http://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html)
 
-TODO
-----
+### TODO
 - Add suitable docblocks to all functions, classes, file templates
 - Process Plurals
 
-
-Process Plurals
----------------
+### Process Plurals
 Take a closer look at the gsa array command and get the plural converted to singular for
 
 <table>
