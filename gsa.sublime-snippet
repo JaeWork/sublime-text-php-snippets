@@ -1,27 +1,54 @@
 <snippet>
-    <content><![CDATA[//-- ${1:names} (array)
+    <content><![CDATA[/**
+ * @var array \$${1:names}
+ */ 
 protected \$$1 = array();
 
+/**
+ * Count number of items in ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ * 
+ * @return int number of ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ */
 public function num${1/(?:^|_)(\w)/\U$1$2/g$1}()
 {
 	return count(\$this->$1);
 }
 
+/**
+ * Get ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ * 
+ * @return array ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ */
 public function get${1/(?:^|_)(\w)/\U$1$2/g$1}()
 {	
 	return \$this->$1;
 }
 
+/**
+ * Set ${1/(?:^|_)(\w)/\U$1$2/g$1}
+ *
+ * @param array \$$1 an array of ${1/(?:^|_)(\w)/\U$1$2/g$1} to set
+ *
+ * @return void
+ */
 public function set${1/(?:^|_)(\w)/\U$1$2/g$1}(\$$1)
 {
 	\$this->$1 = \$$1;
 }
 
+/**
+ * Add a ${1/(?:^|_)(\w)/\U$1$2/g$1} item
+ * 
+ * @return void
+ */
 public function add${1/(?:^|_)(\w)/\U$1$2/g$1}(\$$1, \$key=null)
 {
-	\$this->$1[\$key] = \$$1;
-}
-//-- $1 end 
+	if (\$key !== null) {
+		\$this->$1[\$key] = \$$1;
+	} else {
+		\$this->$1[] = \$$1;
+	}
+} 
 ]]></content>
     <tabTrigger>gsa</tabTrigger>
     <scope>source.php</scope>

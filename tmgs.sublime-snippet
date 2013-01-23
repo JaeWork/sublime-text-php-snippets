@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[/**
+ * testing the Get and Set methods for param $1
+ */
+public function testGetSet$1() 
+{
+	\$mock = \$this->getMock('$2', array('get$1','set$1'));
+	\$mock->expects(\$this->once())
+		->method('get$1')
+		->will(\$this->returnValue(1000));
+	\$mock->expects(\$this->once())
+		->method('set$1');
+
+	\$mock->set$1(1000);
+	\$this->assertEquals(1000, \$mock->get$1());
+}
+]]></content>
+    <tabTrigger>tmgs</tabTrigger>
+    <scope>source.php</scope>
+    <description>phpunit mock getter setter…</description>
+</snippet>
