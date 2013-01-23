@@ -18,7 +18,7 @@ I found this repository with an inspiring implementation of text processing on t
 - Process Plurals
 
 ### Process Plurals
-Take a closer look at the gsa array command and get the plural converted to singular for
+Take a closer look at the gsa array command and get the plural converted to singular form
 
 <table>
     <tr>
